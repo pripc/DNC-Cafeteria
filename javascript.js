@@ -18,5 +18,6 @@ document.querySelector('#atendButton').addEventListener('click', () => {
 document.getElementById('xis').addEventListener("click", () => {
     backgroundCard.style.display="none"
     card.style.display="none"
+    document.querySelector('body').style.overflow= 'visible'
     
 })
