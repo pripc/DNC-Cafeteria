@@ -10,7 +10,7 @@ Para realizar esse projeto utilizou-se como base para estilização o bootstrap 
  ---- BARRA DE NAVEGAÇÃO
  
 Na barra de navegador foi utilizado um código pré existente no bootStrap que pré organiza o navegador conforme necessário. Segue abaixo o código utilizado. 
-No código pré existente, foi inserido o trecho com a Logo do 'DNC Café' dentro da tag 'a', o que odificou o código em relação ao que foi obtido no BootStrap.
+No código pré existente, foi inserido o trecho com a Logo do 'DNC Café' dentro da tag 'a', o que modificou o código em relação ao que foi obtido no BootStrap.
 
       <nav class="navbar navbar-expand-lg bg-body-white">
               <div class="container-fluid">
@@ -119,3 +119,36 @@ No código pré existente, foi inserido o trecho com a Logo do 'DNC Café' dentr
  
  ![image](https://user-images.githubusercontent.com/117996744/213875712-caa1fb1b-1803-4c9c-af18-310db5647b4a.png)
 
+ ---- FUNÇÕES JAVASCRIPT
+ 
+Nessa página foram inseridas duas funcionalidades de interação com o usuário da página. 
+
+A primeira delas é mostrar o botão de "COMPRAR AGORA" dentro dos cards ao passar o mouse sobre cada card. Abaixo um exemplo do botão que deve aparecer:   
+
+![image](https://user-images.githubusercontent.com/117996744/215082158-ae7b4722-fb4e-4083-939d-f15a17a74031.png)
+
+Para fazer essa funcionalidade usou-se a função entitulada 'HighlightButton'. De modo complementar, usou-se a função 'hiddeButton' para definir que quando o usuário retire o mouse de um card, o botão 'COMPRAR AGORA' desapareça.
+
+A segunda funcionalidade acrescentada usando JavaScript foi a criação de um modal após o clique no botão 'Atendimento' na barra de navegação, conforme mostrado abaixo  
+
+![image](https://user-images.githubusercontent.com/117996744/215084049-1db4efc8-da09-4aff-8624-dfd6a57b3f43.png)
+
+
+Para tanto utilizou-se a função mostrada abaixo. Note, que nesse caso optou-se por usar uma função anônima:
+
+        document.querySelector('#atendButton').addEventListener('click', () => {
+            card = document.querySelector('#cardAtendimento')
+            backgroundCard = document.querySelector('#backgroundcardAtendimento')
+            backgroundCard.style.display="block"
+            card.style.display="block"
+        })
+
+De modo complementar utilizou-se outra função anônima para garantir que quando o usuário clique no símbolo 'x'no canto superior direito do modal, ele feche essa janela e volte para a parte principal do site.
+
+# Pontos de aprendizado
+
+Como todo projeto ésempre possível aprender algo novo, abaixo estão descritos os principais pontos de aprendizado durante este projeto:
+1) Usar overflow = 'hidden' para esconder a barra de rolagem enquanto o modal estiver aberto;
+2) Inspecionar mais detalhadamente o código via console;  
+3)Aprimorar os conhecimentos em BootStrap;
+4)Usar Selector dentro de funções;
