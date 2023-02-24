@@ -1,4 +1,11 @@
 # DNC-Cafeteria
+
+# DEMONSTRAÇÃO
+
+<p>
+<img width= "600" src="assets/images/GIF_DEMO.gif">
+</p>
+
 # Criação da Landing Page da cafeteria DNC
 ![image](https://user-images.githubusercontent.com/117996744/213874441-6d0c7f76-4692-4bc6-b0c7-70eeeebab955.png)
 
